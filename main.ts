@@ -1,13 +1,19 @@
-// news-image-20261121 — entry program (v1, visual broadsheet).
+// news-image-20261121 — entry program (v2, magazine cover-story).
 //
-// The entry image (entry.png) is a visual broadsheet of the world news of
-// Saturday, 21 November 2026: 19 stories across regions and fields, 7 of
-// them illustrated, with a date headline, a key-numbers strip, three large
-// visual story blocks (BepiColombo entering Mercury orbit, Kyiv counting
-// the cost of Russia's biggest barrage, COP31 in overtime with no deal), a
-// world map and a numbered briefs list. Every story was date-checked
-// against live reporting before the image was drawn. The illustrations
-// were drawn for this entry (generated art, no borrowed photo or artwork).
+// The entry image (entry.png) is a magazine cover-story of the world news
+// of Saturday, 21 November 2026: 28 stories across regions and fields, 9
+// of them illustrated, with a date masthead in a bold condensed face, a
+// side-by-side hero (BepiColombo entering Mercury orbit), a navy
+// key-numbers strip, an eight-story illustrated grid (Kyiv counting the
+// cost of Russia's biggest barrage, COP31 in overtime with no deal, missiles
+// in Poland, Denmark expelling a Russian envoy, Wall Street sliding, a
+// Houthi missile hitting Riyadh, Cyclone Akvan weakening, the ICJ ruling
+// Myanmar guilty), a REAL world map (Natural Earth 110m, public domain)
+// marking where the day's biggest stories happened, a numbered briefs list
+// of 19 more stories, and a "what to watch" box. Every story was
+// date-checked against live reporting before the image was drawn. The
+// illustrations were drawn for this entry (generated art, no borrowed
+// photo or artwork).
 // This program only places a byte-for-byte copy of the finished image at
 // the output path the grader reads, after confirming the file is a real
 // PNG.
