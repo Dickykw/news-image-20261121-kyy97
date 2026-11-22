@@ -5,47 +5,51 @@
 [![reward](https://make.fun/badge/news-image-20261121/Dickykw/news-image-20261121-kyy97/reward.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
 
 One image summing up the world's news of **Saturday, 21 November 2026** — a
-magazine cover-story of the day's 28 biggest stories, across regions and
-fields, 9 of them illustrated, with the date named at the top, a
-key-numbers strip on a navy band, a side-by-side hero, an eight-story
-illustrated grid, a REAL world map (Natural Earth 110m, public domain)
-marking where the day's biggest stories happened, a numbered briefs list of
-19 more stories, and a "what to watch" box. Every story was date-checked
-against live reporting.
+broadsheet front page of the day's **37 biggest stories across 9 regions**
+(Europe 9, Middle East 6, Americas 4, Africa 3, South Asia 3, East Asia 3,
+South-East Asia 3, Oceania 3, Global 3), drawn entirely with code: a giant
+serif date masthead, a UTC timeline strip of the day's biggest events, a
+big-number stats row, a stories-by-region bar, three large vector panels, ten
+numbered mid stories with a big stat and named outlets each, a REAL world map
+(Natural Earth 110m, public domain) with numbered pins, a 24-item briefs list,
+a DATE CHECK box, and a HOW SURE legend. Every story was date-checked against
+live reporting for 21 November 2026 (UTC).
 
-The hero story:
+The three big stories:
 
-BepiColombo enters Mercury orbit — ESA/JAXA probe ends an eight-year,
-6-billion-mile voyage and fires into orbit around the smallest planet.
+1. **Iran hits Bahrain as tankers struck in Hormuz** — an Iranian attack set a
+   Bahrain industrial site ablaze; no one hurt. IRGC says it hit US positions.
+   UKMTO: two tankers hit off Khasab. (AL JAZEERA · REUTERS · AFP)
+2. **Drones set Russian cargo ship ablaze off Finland** — Sparta II, hit about
+   06:50 UTC, drifted into Finnish waters; crew evacuated. Finland: Ukraine
+   likely behind it. (BBC · FRANCE 24 · MOSCOW TIMES)
+3. **COP31 stuck over fossil fuels in overtime** — a day past deadline, talks
+   paused overnight. The EU and Pacific states reject a draft omitting fossil
+   fuels. (BBC · AFP · FRANCE 24)
 
-The eight illustrated stories:
+Plus, among others: the EU–Indonesia trade pact after 10 years; Mexico seizing
+'El Chapo Isidro'; UN 'killer robot' talks ending with no binding treaty;
+BepiColombo entering orbit around Mercury; the Nigeria funeral boat toll
+reaching 24; the deep M6.8 Banda Sea quake; tainted alcohol killing 11 in
+Manipur; England beating the All Blacks 37–12; BTS taking five MAMA awards;
+the sixth Saturday of French cost-of-living marches — and 24 more briefs, from
+Jerusalem to Wellington.
 
-1. Kyiv counts the cost — nine killed, power, heat and water cut, after
-   Russia's biggest barrage of the war (404 drones, 111 missiles)
-2. COP31 in overtime, no deal — fossil-fuel language dropped from the draft
-   and a third text due on Saturday as the Antalya talks run past deadline
-3. Russian missiles land in Poland and NATO chief Rutte heads to Warsaw
-4. Denmark expels a Russian envoy over an alleged plot to kill rapper
-   Kyivstoner
-5. Wall Street slides into correction (S&P 500 −3.7%, Nasdaq −5%)
-6. A Houthi missile hits the Riyadh PIF tower
-7. Cyclone Akvan weakens after landfall (300,000+ evacuated in Odisha)
-8. The ICJ rules Myanmar committed genocide against the Rohingya
-
-Plus, among others: Estonia to shut its Russia border crossings;
-JPMorgan, Visa and Mastercard hit by a vendor cyberattack; Iraqi troops move
-on a militia stronghold; the US holds its first Pacific deep-sea mining
-auction; the ICC awards India the 2029 Champions Trophy and 2031 World Cup.
+The DATE CHECK box names the well-known stories that were left out because
+they belong to another UTC day (Fri 20 Nov: Russian missiles in Poland,
+Denmark expelling a Russian attaché, the Wall Street tech sell-off, the GTA VI
+sales record; Sun 22 Nov: Verstappen winning Las Vegas, the new COP31 draft,
+India declaring at 720-9).
 
 ## How it works
 
-`entry.png` (1024×1024) is the finished magazine cover-story, rendered at
-build time by `work/v2/render_entry_v2.py` (PIL, in the build workspace —
-not part of the repo) from illustrations drawn for this entry and a real
-world map (Natural Earth 110m, public domain). `main.ts` is a
-deterministic Node 22 program (standard library only, no network) that
-copies the finished image to the output path the grader reads, after
-checking it is a real PNG under the 1 MiB cap.
+`entry.png` (1024×1024) is the finished broadsheet, rendered at build time by
+`work/v3/render_entry_v3.py` (PIL, in the build workspace — not part of the
+repo) from vector drawings made for this entry and a real world map (Natural
+Earth 110m, public domain). No photo-like images are used anywhere. `main.ts`
+is a deterministic Node 22 program (standard library only, no network) that
+copies the finished image to the output path the grader reads, after checking
+it is a real PNG under the 1 MiB cap.
 
 ## Run it
 
